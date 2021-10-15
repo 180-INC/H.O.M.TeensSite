@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Join The Family</title>
+        <link rel="shortcut icon" href="assets/rccg.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+        </style>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body class="bg-light">
+        
+    <div class="container">
+    <main>
+        <div class="py-5 text-center">
+        <img src="assets/rccg.png" width="50px" height="50px" alt="RCCG Logo">
+        <h2>The Dominion Family</h2>
+        <p class="lead">Great you ve decided to join the family. Well it's very simple all you need to do is fill the form below and then we will see you in church.</p>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Join Us</h4>
+                <form class="needs-validation" action="https://formspree.io/f/mqkwnryp" method="POST" target="_blank">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label for="full-name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" name="name" id="full-name" placeholder="First and Last" required>
+                    <div class="invalid-feedback">
+                        Valid Full name is required.
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email-address" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="House-address" class="form-label">House Address</label>
+                        <input type="text" class="form-control" name="street" id="street-address" placeholder="House Address" required>
+                    <div class="invalid-feedback">
+                        Please enter your house address.
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="note" class="form-label">Note</label>
+                        <textarea rows="2" class="form-control" name="note" id="note" placeholder="Include any additional information"></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+                    </div>
+                </div>
+
+                <hr>
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit" value="submit">Submit</button>
+                </form>
+            </div>
+            </div>
+        </main>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; House of Mercy Teens. Designed By 180 Technologies</p>
+            <ul class="list-inline">
+            <li class="list-inline-item"><a href="home.html">Home</a></li>
+            <li class="list-inline-item"><a href="about.html">Who we are</a></li>
+            <li class="list-inline-item"><a href="memories.html">Memories</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="form-validation.js"></script>
+    </body>
+</html>
